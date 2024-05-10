@@ -1,0 +1,38 @@
+.calculator {
+	width: 300px; /* Adjust width if necessary */
+	border: 1px solid #ccc;
+	padding: 10px;
+  }
+  
+  .display {
+	width: 100%;
+	border: 1px solid #eee;
+	padding: 10px;
+	font-size: 24px;
+	text-align: right;
+	margin-bottom: 10px;
+  }
+  
+  .buttonPanel {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .row {
+	display: flex; /* Ensures that the buttons in a row are laid out in a row */
+  }
+  
+  .calculatorButton {
+	padding: 10px 0; /* Reduced horizontal padding */
+	font-size: 16px;
+	flex: 1; /* Ensures each button grows to fill the row equally */
+	text-align: center; /* Centers text horizontally */
+	min-width: 0; /* Overcomes default minimum sizing behavior */
+	width: 25%; /* Assuming four buttons per row */
+  }
+  
+  .firstRow .calculatorButton {
+	width: 16.666%; /* For the first row with 6 buttons */
+	padding: 10px 4px; /* Smaller horizontal padding for the first row */
+  }
+  
